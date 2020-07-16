@@ -1,4 +1,5 @@
-import {Component,Input} from '@angular/core'
+import {Component,Input} from '@angular/core';
+import { NgForm } from '@angular/forms';
 
 @Component({
   selector:'msg',
@@ -14,9 +15,9 @@ export class MessageComponent{
   name;
   prod_name;
   quantity = 1;
-  products = [];
-  addprod(){
-
+  products = ["bread"];
+  addprod(f: NgForm){
+    this.products.push(f);
   }
   add(){
     ++this.quantity

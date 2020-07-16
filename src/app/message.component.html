@@ -1,6 +1,6 @@
 <form #f="ngForm" (onsubmit)="addprod(f)">
   <label>name</label>
-  <input namr="name" ngModel/><br>
+  <input name="name" ngModel/><br>
   <label>product name</label>
   <input name="prod_name" ngModel/>
   <p style="text-align: right">
@@ -8,3 +8,4 @@
     </p>
     <input type="submit"/>
   </form>
+  <p>{{products}}</p>
