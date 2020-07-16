@@ -15,7 +15,7 @@ export class MessageComponent{
   prod_name;
   quantity = 1;
   products = [];
-  add_prod(){
+  addprod(){
 
   }
   add(){

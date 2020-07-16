@@ -1,9 +1,9 @@
-<form [(ngSubmit)]="add_prod">
+<form [(ngSubmit)]="addprod()">
   <label>name</label>
   <input [(ngModel)]="name"/>
   <label>product name</label>
   <input [(ngModel)]="prod_name"/>
-  <p style="text-align: left">
+  <p [] style="text-align: left">
     <button (click)="add()">add</button> <b>Quantity</b> {{quantity}}
     </p>
     <input type="submit"/>
