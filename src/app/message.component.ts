@@ -11,4 +11,14 @@ export class MessageComponent{
   inc(){
     this.awesome +=  ' 💕👄💝💋'
   }
+  name;
+  prod_name;
+  quantity = 1;
+  products = [];
+  add_prod(){
+
+  }
+  add(){
+    ++this.quantity
+  }
 }

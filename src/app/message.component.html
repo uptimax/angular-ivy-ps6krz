@@ -1,3 +1,10 @@
-<h1>Go nine tails{{emoji}}</h1>
-<h2>this is {{awesome}} </h2><br/>
-<button (click)='inc()'>increment</button>
+<form [(ngSubmit)]="add_prod">
+  <label>name</label>
+  <input [(ngModel)]="name"/>
+  <label>product name</label>
+  <input [(ngModel)]="prod_name"/>
+  <p style="text-align: left">
+    <button (click)="add()">add</button> <b>Quantity</b> {{quantity}}
+    </p>
+    <input type="submit"/>
+  </form>
